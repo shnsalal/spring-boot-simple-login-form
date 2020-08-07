@@ -1,0 +1,11 @@
+.card {
+  border-radius: 2%;
+  box-shadow: 0 0 10px 0;
+  padding: 40px;
+  margin-top: 10px;
+  margin-left: 20%;
+}
+
+form {
+  text-align: left;
+}

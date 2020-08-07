@@ -1,0 +1,32 @@
+<div class="card col-8 ">
+  <form [formGroup]="registerForm" (ngSubmit)="register()">
+    <div>
+      <div class="form-group">
+        <input [ngClass]="{'is-invalid': registerForm.get('username').errors && registerForm.get('username').touched}"
+        type="text"
+        class="form-control"
+        placeholder="Username"
+        formControlName="username">
+        <div class="invalid-feedback" *ngIf="registerForm.get('username').touched && registerForm.get('username').hasError('required')">
+          Enter valid username
+        </div>
+      </div>
+
+      <div class="form-group">
+        <input [ngClass]="{'is-invalid': registerForm.get('password').errors && registerForm.get('password').touched}"
+        type="password"
+        class="form-control"
+        placeholder="Password"
+        formControlName="password">
+        <div class="invalid-feedback" *ngIf="registerForm.get('password').touched && registerForm.get('password').hasError('required')">
+          Enter valid password
+        </div>
+      </div>
+
+      <div class="form-group">
+        <button class="btn btn-success mr-2 mt-2" [disabled]="registerForm.invalid" type="submit">Sign Up</button>
+        <button class="btn btn-outline-info mt-2" (click)="cancel()" type="button">Cancel</button>
+      </div>
+    </div>
+  </form>
+</div>

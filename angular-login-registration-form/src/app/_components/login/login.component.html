@@ -1,0 +1,29 @@
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <div class="card justify-content-center loginblock">
+    <div class="child">
+      <div class="form-inline justify-content-center"><h1>Welcome</h1></div>
+      <hr color="black">
+
+      <div class="form-group">
+        <label for="username" >Username</label>
+        <input
+        type="text"
+        class="form-control"
+        formControlName="username"
+        required>
+      </div>
+
+      <div class="form-group has-error has-feedback">
+        <label for="password">Password</label>
+        <input
+        type="password"
+        class="form-control error"
+        formControlName="password"
+        required>
+      </div>
+
+      <button class="btn btn-success mt-4 btn-lg btn-block" [disabled]="loginForm.invalid" type="submit">Sign In</button>
+      <p class="mt-2" style="text-align: center;">Forgot password? <a href="#">Click Here</a></p>
+    </div>
+  </div>
+</form>

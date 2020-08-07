@@ -1,0 +1,48 @@
+/* .body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(224, 224, 200);
+} */
+.styleheading {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 300;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.jumbotron {
+padding: 0%;
+color: rgb(42, 56, 56);
+background-color:rgb(243, 239, 239)
+}
+
+.aligncenter {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* .aligncenter {
+  width: 100px;
+	height: 100px;
+  text-align: center;
+  margin: auto;
+}
+ */
+
+.limiter {
+  height: 100%;
+  width: 100%;
+  color: cadetblue;
+}
+
+/* .registerform {
+text-align: center;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+text-align: center;
+justify-content: center;
+justify-items: center;
+position: relative;
+} */

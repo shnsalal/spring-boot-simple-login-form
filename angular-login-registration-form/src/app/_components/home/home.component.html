@@ -1,0 +1,28 @@
+<div class="jumbotron container">
+  <h1 class="styleheading">Title</h1>
+</div>
+<div class="limiter px-4 py-4">
+
+  <div class="row">
+    <div class="col-md-8 col-sm-6 col-xs-12 aligncenter">
+      <div *ngIf="!registerMode">
+        <h1>We are missing you</h1>
+        <p class="lead">All you need to do is sign up!</p>
+        <div class="text-center">
+          <button class="btn btn-primary btn-lg mr-2 mt-2" (click)="registerToggle()">Register</button>
+          <button class="btn btn-info btn-lg mt-2">Learn more</button>
+        </div>
+      </div>
+
+      <div *ngIf="registerMode" >
+        <div class="registerform">
+          <app-register  (cancelRegister)="onCancelRegister($event)"></app-register>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6 col-xs-12">
+      <app-login></app-login>
+    </div>
+  </div>
+</div>

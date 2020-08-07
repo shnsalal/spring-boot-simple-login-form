@@ -1,0 +1,23 @@
+.card {
+  border-radius: 2%;
+  box-shadow: 0 0 10px 0;
+  padding: 40px;
+  margin-top: 10px;
+}
+
+.card:hover {
+opacity: 100%;
+transition: all .4s ease;
+}
+
+/* .card::after {
+ z-index: 1;
+ filter: alpha(opacity=50);
+
+} */
+
+/* .loginblock {
+  margin-top: 25%;
+  background-color: rgb(224, 224, 200);
+  background-color: black;
+} */
